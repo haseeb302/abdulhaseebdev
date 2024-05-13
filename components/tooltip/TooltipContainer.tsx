@@ -1,13 +1,7 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
 import React, { useState } from "react";
-import {
-  motion,
-  useTransform,
-  AnimatePresence,
-  useMotionValue,
-  useSpring,
-} from "framer-motion";
+import { motion, useTransform, useMotionValue, useSpring } from "framer-motion";
 import Link from "next/link";
 
 export const AnimatedTooltip = ({
@@ -83,7 +77,7 @@ export const AnimatedTooltip = ({
               width={100}
               src={item.image}
               alt={item.name}
-              className="object-cover bg-white !m-0 !p-0 object-top rounded-full h-14 w-14 border-2 group-hover:scale-105 group-hover:z-30 border-white  relative transition duration-500"
+              className="object-cover bg-white !m-0 !p-0 object-top rounded-full md:h-14 md:w-14 lg:h-14 lg:w-14 h-10 w-10 border-2 group-hover:scale-105 group-hover:z-30 border-white relative transition duration-500"
             />
           </div>
         </Link>

@@ -13,7 +13,7 @@ export default function Home() {
     <div className="mx-20">
       <NavbarDemo />
       <div className="flex">
-        <div className="pl-10">
+        <div className="pl-0 md:pl-10 lg:pl-10">
           <HeroHighlightDemo />
           <AnimatedTooltipPreview />
         </div>

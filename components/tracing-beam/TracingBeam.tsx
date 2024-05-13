@@ -72,9 +72,9 @@ const content = [
         </h3>
         <ul>
           <li>
-            ● <span className="font-bold">Dissertation:</span> Comparing Vision
+            <span className="font-bold">Dissertation:</span> Comparing Vision
             Transformers and other Deep Learning Techniques on Plant Disease
-            Detection (Distinction)
+            Detection <span className="font-bold">(Distinction)</span>
             <a
               href="https://colab.research.google.com/drive/1WhwgO-A95Nj7vdiZKNTz0fCUKW_Xp5bE?usp=sharing"
               target="_blank"
@@ -84,9 +84,8 @@ const content = [
             </a>
           </li>
           <li>
-            ● <span className="font-bold">Modules:</span> Comparing Vision
-            Transformers and other Deep Learning Techniques on Plant Disease
-            Detection (Distinction)
+            <span className="font-bold mr-2">Modules:</span>● Machine Learning ●
+            Data Analytics ● Big Data ● Ethics in AI
           </li>
         </ul>
 
@@ -103,8 +102,7 @@ const content = [
         <h3 className="text-lg font-bold leading-tight mb-4">
           CreditBook raised $11 million pre-series A round by top global VC
           firms like Tiger Global. CreditBook aims to improve the financial
-          outcomes of small and medium businesses across Pakistan. My
-          responsibilities at CreditBook:
+          outcomes of small and medium businesses across Pakistan.
         </h3>
         <ul>
           <li>

@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/utils/cn";
-import { useMotionValue, motion, useMotionTemplate } from "framer-motion";
+import { motion } from "framer-motion";
 import React from "react";
 
 export const HeroHighlight = ({
@@ -15,31 +15,10 @@ export const HeroHighlight = ({
   return (
     <div
       className={cn(
-        "relative h-[20rem] flex items-center justify-center w-full group",
+        "relative md:h-[10rem] lg:h-[20rem] h-[7rem] flex items-center my-8 lg:my-0 md:my-12",
         containerClassName
       )}
     >
-      {/* <div className="absolute inset-0 bg-dot-thick-neutral-300 dark:bg-dot-thick-neutral-800  pointer-events-none" /> */}
-      {/* <motion.div
-        className="pointer-events-none bg-dot-thick-indigo-500 dark:bg-dot-thick-indigo-500   absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
-        style={{
-          WebkitMaskImage: useMotionTemplate`
-            radial-gradient(
-              200px circle at ${mouseX}px ${mouseY}px,
-              black 0%,
-              transparent 100%
-            )
-          `,
-          maskImage: useMotionTemplate`
-            radial-gradient(
-              200px circle at ${mouseX}px ${mouseY}px,
-              black 0%,
-              transparent 100%
-            )
-          `,
-        }}
-      /> */}
-
       <div className={cn("relative z-20", className)}>{children}</div>
     </div>
   );

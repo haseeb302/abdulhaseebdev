@@ -18,7 +18,7 @@ export function ProjectCard({
 }) {
   return (
     <PinContainer title={title} href={href}>
-      <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[30rem] h-[20rem]">
+      <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 lg:w-[30rem] lg:h-[20rem] md:w-[30rem] md:h-[20rem] w-[20rem] h-[20rem]">
         <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
           {title}
         </h3>
