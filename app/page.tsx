@@ -10,7 +10,7 @@ import KanbanDndImage from "/public/kanban-dnd.png";
 
 export default function Home() {
   return (
-    <div className="mx-20">
+    <div className="lg:mx-20 md:mx-20 mx-10">
       <NavbarDemo />
       <div className="flex">
         <div className="pl-0 md:pl-10 lg:pl-10">
