@@ -5,6 +5,7 @@ import { AnimatedTooltip } from "@/components/tooltip/TooltipContainer";
 import githubLogo from "/public/github-logo.png";
 import linkedinLogo from "/public/linkedin.png";
 import twitterLogo from "/public/twitter.png";
+import mailIcon from "/public/mail.png";
 
 const items = [
   {
@@ -17,16 +18,23 @@ const items = [
   {
     id: 2,
     name: "LinkedIn",
-    designation: "Product Manager",
+    designation: "",
     image: linkedinLogo,
     href: "https://www.linkedin.com/in/haseeeb/",
   },
   {
     id: 3,
     name: "Twitter",
-    designation: "Data Scientist",
+    designation: "",
     image: twitterLogo,
     href: "https://twitter.com/mabdulhaseeeb",
+  },
+  {
+    id: 4,
+    name: "Email Me",
+    designation: "Full Stack Developer",
+    image: mailIcon,
+    href: "mailto:mabdulhaseeeb@gmail.com",
   },
 ];
 

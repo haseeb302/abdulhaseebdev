@@ -60,7 +60,7 @@ const content = [
     badge: "Sep, 2022 - Oct, 2023",
     title: "MSc Data Science",
     description: (
-      <>
+      <div id="Education">
         <h2 className="text-2xl font-bold leading-tight mb-4 underline underline-offset-2">
           Education
         </h2>
@@ -91,7 +91,7 @@ const content = [
         </ul>
 
         <hr className="my-8" />
-      </>
+      </div>
     ),
     image: MDXLogo,
     href: "https://creditbook.pk/",
@@ -99,7 +99,7 @@ const content = [
   {
     title: "Full Stack Developer",
     description: (
-      <>
+      <div id="Experience">
         <h3 className="text-lg font-bold leading-tight mb-4">
           CreditBook raised $11 million pre-series A round by top global VC
           firms like Tiger Global. CreditBook aims to improve the financial
@@ -122,7 +122,8 @@ const content = [
           </li>
           <li>● Worked on design system built with storybook</li>
         </ul>
-      </>
+        <hr className="my-8" />
+      </div>
     ),
     badge: "Feb, 2022 - Sep, 2022",
     image: CBLogo,

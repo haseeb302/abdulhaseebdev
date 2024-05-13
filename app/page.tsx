@@ -18,7 +18,10 @@ export default function Home() {
           <AnimatedTooltipPreview />
         </div>
       </div>
-      <div className="flex flex-wrap gap-20 items-center justify-center mt-20">
+      <div
+        className="flex flex-wrap gap-20 items-center justify-center mt-20"
+        id="Projects"
+      >
         <ProjectCard
           img={DbcDashboardImage}
           alt="dbc-dashboard"
