@@ -6,6 +6,8 @@ import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "@/components/tracing-beam/TracingBeamContainer";
 import CBLogo from "/public/cb-logo.svg";
 import LSLogo from "/public/ls-logo.png";
+import MDXLogo from "/public/mdx.webp";
+
 // If loading a variable font, you don't need to specify the font weight
 const roboto = Roboto({
   weight: "400",
@@ -17,9 +19,9 @@ export function TracingBeamDemo() {
   return (
     <TracingBeam className="px-6">
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
-        {dummyContent.map((item, index) => (
+        {content.map((item, index) => (
           <div key={`content-${index}`} className="mb-10">
-            <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
+            <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4 font-bold">
               {item.badge}
             </h2>
 
@@ -34,13 +36,15 @@ export function TracingBeamDemo() {
 
             <div className="text-sm  prose prose-sm dark:prose-invert dark:text-white">
               {item?.image && (
-                <Image
-                  src={item.image}
-                  alt="blog thumbnail"
-                  height="800"
-                  width="400"
-                  className="rounded-lg mb-10 object-cover bg-white p-4"
-                />
+                <a href={item?.href} target="_blank">
+                  <Image
+                    src={item.image}
+                    alt="blog thumbnail"
+                    height="800"
+                    width="400"
+                    className="rounded-lg mb-10 object-cover bg-white p-4"
+                  />
+                </a>
               )}
               {item.description}
             </div>
@@ -51,60 +55,125 @@ export function TracingBeamDemo() {
   );
 }
 
-const dummyContent = [
+const content = [
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+    badge: "Sep, 2022 - Oct, 2023",
+    title: "MSc Data Science",
     description: (
       <>
-        <p>
-          Sit duis est minim proident non nisi velit non consectetur. Esse
-          adipisicing laboris consectetur enim ipsum reprehenderit eu deserunt
-          Lorem ut aliqua anim do. Duis cupidatat qui irure cupidatat incididunt
-          incididunt enim magna id est qui sunt fugiat. Laboris do duis pariatur
-          fugiat Lorem aute sit ullamco. Qui deserunt non reprehenderit dolore
-          nisi velit exercitation Lorem qui do enim culpa. Aliqua eiusmod in
-          occaecat reprehenderit laborum nostrud fugiat voluptate do Lorem culpa
-          officia sint labore. Tempor consectetur excepteur ut fugiat veniam
-          commodo et labore dolore commodo pariatur.
-        </p>
-        <p>
-          Dolor minim irure ut Lorem proident. Ipsum do pariatur est ad ad
-          veniam in commodo id reprehenderit adipisicing. Proident duis
-          exercitation ad quis ex cupidatat cupidatat occaecat adipisicing.
-        </p>
-        <p>
-          Tempor quis dolor veniam quis dolor. Sit reprehenderit eiusmod
-          reprehenderit deserunt amet laborum consequat adipisicing officia qui
-          irure id sint adipisicing. Adipisicing fugiat aliqua nulla nostrud.
-          Amet culpa officia aliquip deserunt veniam deserunt officia
-          adipisicing aliquip proident officia sunt.
-        </p>
+        <h2 className="text-2xl font-bold leading-tight mb-4 underline underline-offset-2">
+          Education
+        </h2>
+        <h3 className="text-lg font-bold leading-tight mb-4">
+          I went to pursue my Masters Degree in Data Science at Middlesex
+          University London.
+          <br />
+          <span className=" text-orange-400">Grade: 2:1</span>
+        </h3>
+        <ul>
+          <li>
+            ● <span className="font-bold">Dissertation:</span> Comparing Vision
+            Transformers and other Deep Learning Techniques on Plant Disease
+            Detection (Distinction)
+            <a
+              href="https://colab.research.google.com/drive/1WhwgO-A95Nj7vdiZKNTz0fCUKW_Xp5bE?usp=sharing"
+              target="_blank"
+              className="text-blue-500 underline px-2"
+            >
+              Check Notebook here
+            </a>
+          </li>
+          <li>
+            ● <span className="font-bold">Modules:</span> Comparing Vision
+            Transformers and other Deep Learning Techniques on Plant Disease
+            Detection (Distinction)
+          </li>
+        </ul>
+
+        <hr className="my-8" />
       </>
     ),
-    badge: "React",
-    image: CBLogo,
+    image: MDXLogo,
+    href: "https://creditbook.pk/",
   },
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+    title: "Full Stack Developer",
     description: (
       <>
-        <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
-        </p>
-        <p>
-          In dolore veniam excepteur eu est et sunt velit. Ipsum sint esse
-          veniam fugiat esse qui sint ad sunt reprehenderit do qui proident
-          reprehenderit. Laborum exercitation aliqua reprehenderit ea sint
-          cillum ut mollit.
-        </p>
+        <h3 className="text-lg font-bold leading-tight mb-4">
+          CreditBook raised $11 million pre-series A round by top global VC
+          firms like Tiger Global. CreditBook aims to improve the financial
+          outcomes of small and medium businesses across Pakistan. My
+          responsibilities at CreditBook:
+        </h3>
+        <ul>
+          <li>
+            ● Developed UI components for critical features with React Native
+            based on Figma mocks and a design system for over a million users
+          </li>
+          <li>● Improved test coverage by 50% using Jest & RNTL</li>
+          <li>
+            ● Reduced errors and improved code readability by writing code in
+            Typescript
+          </li>
+          <li>
+            ● Implemented fast and secure backend services and cloud storage
+            using Firebase, Firestore, and AWS
+          </li>
+          <li>● Worked on design system built with storybook</li>
+        </ul>
       </>
     ),
-    badge: "Changelog",
+    badge: "Feb, 2022 - Sep, 2022",
+    image: CBLogo,
+    href: "https://creditbook.pk/",
+  },
+  {
+    title: "Full Stack Developer",
+    description: (
+      <>
+        <h3 className="text-lg font-bold leading-tight mb-4">
+          A Platform to Consolidate your Leads coming from different Marketing
+          Channels. LastingSales has been granted a UK Innovator Visa.
+        </h3>
+        <ul>
+          <li>
+            ● Optimized the page load time from 2-3 minutes to less than 10
+            seconds and fixed this serious problem faced by our users
+          </li>
+          <li>
+            ● Successfully migrated the app from AngularJS to ReactJS, and
+            demonstrated leadership by guiding a small team
+          </li>
+          <li>
+            ● Improved user experience by implementing third-party libraries
+            like React Drag and Drop and integrating Twilio
+          </li>
+          <li>
+            ● Utilised EC2 instances and Amazon S3 buckets for deployments on
+            AWS
+          </li>
+          <li>
+            ● Got experience working with shell scripting including CLI tools
+          </li>
+          <li>
+            ● Streamlined product roadmap by documenting and designing a concept
+            for the new version of the product.
+          </li>
+          <li>
+            ● Independently fixed a user matching error on a video chat app
+            built with NodeJS and used libraries like socket.io and agora.io
+          </li>
+          <li>● Integrated 3rd party APIs like Agora, ZenDesk, Stripe</li>
+          <li>
+            ● Managed multiple projects built with ReactJS, NodeJS/ExpressJS,
+            Laravel & MongoDB
+          </li>
+        </ul>
+      </>
+    ),
+    badge: "July, 2020 - January, 2022",
     image: LSLogo,
+    href: "https://lastingsales.com/",
   },
 ];

@@ -21,9 +21,9 @@ function Navbar({ className }: { className?: string }) {
   return (
     <div className={cn("", className)}>
       <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item="Services" />
-        <MenuItem setActive={setActive} active={active} item="Products" />
-        <MenuItem setActive={setActive} active={active} item="Pricing" />
+        <MenuItem setActive={setActive} active={active} item="Projects" />
+        <MenuItem setActive={setActive} active={active} item="Experience" />
+        <MenuItem setActive={setActive} active={active} item="Education" />
       </Menu>
     </div>
   );

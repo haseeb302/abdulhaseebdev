@@ -2,33 +2,38 @@
 
 import React from "react";
 import { AnimatedTooltip } from "@/components/tooltip/TooltipContainer";
-import logo from "/public/github-logo.png";
+import githubLogo from "/public/github-logo.png";
+import linkedinLogo from "/public/linkedin.png";
+import twitterLogo from "/public/twitter.png";
 
-const people = [
+const items = [
   {
     id: 1,
-    name: "John Doe",
+    name: "GitHub",
     designation: "Software Engineer",
-    image: logo,
+    image: githubLogo,
+    href: "https://github.com/haseeb302",
   },
   {
     id: 2,
-    name: "Robert Johnson",
+    name: "LinkedIn",
     designation: "Product Manager",
-    image: logo,
+    image: linkedinLogo,
+    href: "https://www.linkedin.com/in/haseeeb/",
   },
   {
     id: 3,
-    name: "Jane Smith",
+    name: "Twitter",
     designation: "Data Scientist",
-    image: logo,
+    image: twitterLogo,
+    href: "https://twitter.com/mabdulhaseeeb",
   },
 ];
 
 export function AnimatedTooltipPreview() {
   return (
     <div className="flex flex-row items-center w-full">
-      <AnimatedTooltip items={people} />
+      <AnimatedTooltip items={items} />
     </div>
   );
 }
