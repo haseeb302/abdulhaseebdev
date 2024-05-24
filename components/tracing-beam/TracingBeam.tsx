@@ -64,11 +64,8 @@ const content = [
     id: "Education",
     description: (
       <div>
-        <h3 className="text-lg font-bold leading-tight mb-4">
-          I went to pursue my Masters Degree in Data Science at Middlesex
-          University London.
-          <br />
-          <span className=" text-purple-400">Grade: 2:1</span>
+        <h3 className="text-lg font-bold leading-tight mb-4 text-purple-400">
+          Grade: 2:1
         </h3>
         <ul>
           <li>
