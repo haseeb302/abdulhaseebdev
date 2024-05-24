@@ -21,11 +21,11 @@ function Navbar({ className }: { className?: string }) {
         <MenuItem setActive={setActive} active={active} item="Experience" />
         <MenuItem setActive={setActive} active={active} item="Education" />
         {/* </div> */}
-        <div className="!ml-auto">
+        <div className="!ml-auto lg:visible md:visible invisible">
           <a
             href="/AbdulHaseeb_CV2.pdf"
             download="CV"
-            className="bg-gradient-to-r from-purple-500 to-violet-500 text-white lg:px-4 lg:py-2 md:px-4 md:py-2 px-2 py-1 rounded-full"
+            className="bg-gradient-to-r from-purple-500 to-violet-500 text-white lg:px-4 lg:py-2 md:px-4 md:py-2 rounded-full"
           >
             Download CV
           </a>

@@ -16,7 +16,7 @@ export default function Home() {
       <div className="flex">
         <div className="pl-0 md:pl-10 lg:pl-10 mt-10">
           <HeroHighlightDemo />
-          <div className="px-5">
+          <div className="px-5 sm:mt-14 md:mt-0 lg:mt-0 mt-14">
             <p className="text-white mb-5 xl:text-[18px] lg:text-[18px] md:text-[14px] sm:text-[12px] text-[12px]">
               <span className="text-purple-400 font-bold">Contact me</span>{" "}
               using any of the links below:

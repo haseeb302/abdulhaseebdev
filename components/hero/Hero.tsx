@@ -25,16 +25,24 @@ export function HeroHighlightDemo() {
           Full-Stack Developer
         </Highlight>
       </motion.h1>
-
-      <p className="text-zinc-400 mt-5 lg:text-sm md:text-sm sm:text-[10px] text-[10px] px-5">
-        {/* Around <strong className="text-purple-400">3 years</strong> of industry
+      <div className="px-5 mt-5 space-y-3">
+        <p className="text-zinc-400 lg:text-sm md:text-sm sm:text-[10px] text-[10px]">
+          {/* Around <strong className="text-purple-400">3 years</strong> of industry
         experience. <br /> */}
-        Open to new opportunities as{" "}
-        <strong className="text-purple-400">
-          Full-time/Contract/Freelance{" "}
-        </strong>
-        Full Stack Engineer.
-      </p>
+          Open to new opportunities as{" "}
+          <strong className="text-purple-400">
+            Full-time/Contract/Freelance{" "}
+          </strong>
+          Full Stack Engineer.
+        </p>
+        <a
+          href="/AbdulHaseeb_CV2.pdf"
+          download="CV"
+          className="bg-gradient-to-r from-purple-500 to-violet-500 text-white lg:invisible md:invisible px-2 py-1 text-xs visible rounded-md"
+        >
+          Download CV
+        </a>
+      </div>
     </HeroHighlight>
   );
 }
