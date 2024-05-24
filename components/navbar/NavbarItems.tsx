@@ -27,7 +27,7 @@ export const MenuItem = ({
     <Link
       href={`#${item}`}
       onMouseEnter={() => setActive(item)}
-      className="relative "
+      className="relative"
     >
       <motion.p
         transition={{ duration: 0.3 }}
@@ -73,7 +73,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="rounded-3xl border bg-zinc-800 border-zinc-700/60 flex space-x-4 px-8 py-4 lg:text-base md:text-base text-sm"
+      className="rounded-3xl border bg-zinc-800 border-zinc-700/60 flex items-center space-x-4 px-8 py-4 lg:text-base md:text-base text-sm"
     >
       {children}
     </nav>
