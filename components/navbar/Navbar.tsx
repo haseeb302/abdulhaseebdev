@@ -25,7 +25,7 @@ function Navbar({ className }: { className?: string }) {
           <a
             href="/AbdulHaseeb_CV2.pdf"
             download="CV"
-            className=" bg-gradient-to-r from-purple-500 to-violet-500 text-white px-4 py-2 rounded-full"
+            className="bg-gradient-to-r from-purple-500 to-violet-500 text-white lg:px-4 lg:py-2 md:px-4 md:py-2 px-2 py-1 rounded-full"
           >
             Download CV
           </a>
