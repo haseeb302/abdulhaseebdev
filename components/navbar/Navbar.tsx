@@ -16,9 +16,20 @@ function Navbar({ className }: { className?: string }) {
   return (
     <div className={cn("", className)}>
       <Menu setActive={setActive}>
+        {/* <div> */}
         <MenuItem setActive={setActive} active={active} item="Projects" />
         <MenuItem setActive={setActive} active={active} item="Experience" />
         <MenuItem setActive={setActive} active={active} item="Education" />
+        {/* </div> */}
+        <div className="!ml-auto">
+          <a
+            href="/AbdulHaseeb_CV2.pdf"
+            download="CV"
+            className=" bg-gradient-to-r from-purple-500 to-violet-500 text-white px-4 py-2 rounded-full"
+          >
+            Download CV
+          </a>
+        </div>
       </Menu>
     </div>
   );

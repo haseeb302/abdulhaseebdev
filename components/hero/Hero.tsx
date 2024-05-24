@@ -18,14 +18,23 @@ export function HeroHighlightDemo() {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="text-md sm:text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl md:leading-snug lg:leading-snug"
+        className="text-2xl sm:text-3xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl md:leading-snug lg:leading-snug"
       >
-        Full Stack Developer, with 2+ years of experience working in early-stage
-        startups.
+        Empowering Early-Stage Startups and SaaS Companies as a <br />
         <Highlight className="text-black dark:text-white">
-          Turning Ideas into Reality
+          Full-Stack Developer
         </Highlight>
       </motion.h1>
+
+      <p className="text-zinc-400 mt-5 lg:text-sm md:text-sm sm:text-[10px] text-[10px] px-5">
+        {/* Around <strong className="text-purple-400">3 years</strong> of industry
+        experience. <br /> */}
+        Open to new opportunities as{" "}
+        <strong className="text-purple-400">
+          Full-time/Contract/Freelance{" "}
+        </strong>
+        Full Stack Engineer.
+      </p>
     </HeroHighlight>
   );
 }
