@@ -23,7 +23,7 @@ function Navbar({ className }: { className?: string }) {
         {/* </div> */}
         <div className="!ml-auto lg:visible md:visible invisible">
           <a
-            href="/AbdulHaseeb_CV2.pdf"
+            href="/AbdulHaseeb_CV.pdf"
             download="CV"
             className="bg-gradient-to-r from-purple-500 to-violet-500 text-white lg:px-4 lg:py-2 md:px-4 md:py-2 rounded-full"
           >
