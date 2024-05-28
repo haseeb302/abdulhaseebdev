@@ -40,7 +40,7 @@ const items = [
 
 export function AnimatedTooltipPreview() {
   return (
-    <div className="flex flex-row items-center w-full">
+    <div className="flex flex-row justify-center items-center w-full">
       <AnimatedTooltip items={items} />
     </div>
   );

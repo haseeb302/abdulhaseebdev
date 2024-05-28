@@ -18,7 +18,7 @@ export function HeroHighlightDemo() {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="text-2xl sm:text-3xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl md:leading-snug lg:leading-snug"
+        className="text-2xl text-center sm:text-3xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl md:leading-snug lg:leading-snug"
       >
         Empowering Early-Stage Startups and SaaS Companies as a <br />
         <Highlight className="text-black dark:text-white">
@@ -26,7 +26,7 @@ export function HeroHighlightDemo() {
         </Highlight>
       </motion.h1>
       <div className="px-5 mt-5 space-y-3">
-        <p className="text-zinc-400 lg:text-sm md:text-sm sm:text-[10px] text-[10px]">
+        <p className="text-zinc-400 text-center lg:text-sm md:text-sm sm:text-[10px] text-[10px]">
           {/* Around <strong className="text-purple-400">3 years</strong> of industry
         experience. <br /> */}
           Open to new opportunities as{" "}
