@@ -11,6 +11,15 @@ import { IconArrowRight, IconMail } from "@tabler/icons-react";
 export default function Home() {
   return (
     <div className="">
+      <div className="bg-purple-500 py-2 text">
+        <h3 className="text-white text-center">
+          Hire me for price starting from{" "}
+          <span className="font-bold">1800$/mo</span>{" "}
+          <a className="text-sm underline" href="#Projects">
+            see projects
+          </a>
+        </h3>
+      </div>
       <div className="lg:mx-20 md:mx-20 mx-10">
         <NavbarDemo />
       </div>
@@ -125,12 +134,25 @@ export default function Home() {
         </div>
       </div>
       <section className="py-20 text-white">
-        <h2
-          id="Services"
-          className="font-redhat text-3xl md:text-4xl font-black text-center mb-10"
-        >
-          Services
-        </h2>
+        <div className="flex flex-col items-center mb-10">
+          <h2
+            id="Services"
+            className="font-redhat text-3xl md:text-4xl font-black text-center mb-2"
+          >
+            Services
+          </h2>
+          <span className="text-sm font-bold text-white text-opacity-70">
+            Price starting from 1800$/month,{" "}
+            <a
+              href="https://cal.com/abdul-haseeb/15min"
+              target="_blank"
+              className="text-purple-500 underline"
+            >
+              book a call
+            </a>{" "}
+            to discuss further
+          </span>
+        </div>
         <ul className="flex flex-col gap-10 lg:mx-32 md:mx-24 mx-12">
           {/* <ul className="space-y-4"> */}
           <li>
