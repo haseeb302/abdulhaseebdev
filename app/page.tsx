@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="">
       <div className="bg-purple-500 py-2 text">
-        <h3 className="text-white text-center">
+        <h3 className="text-white text-center text-sm">
           Hire me for price starting from{" "}
           <span className="font-bold">1800$/mo</span>{" "}
           <a className="text-sm underline" href="#Projects">
