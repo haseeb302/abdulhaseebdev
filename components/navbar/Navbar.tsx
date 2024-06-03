@@ -16,11 +16,10 @@ function Navbar({ className }: { className?: string }) {
   return (
     <div className={cn("", className)}>
       <Menu setActive={setActive}>
-        {/* <div> */}
         <MenuItem setActive={setActive} active={active} item="Projects" />
         <MenuItem setActive={setActive} active={active} item="Services" />
         <MenuItem setActive={setActive} active={active} item="About" />
-        {/* </div> */}
+
         <div className="!ml-auto lg:visible md:visible invisible">
           <a
             href="https://cal.com/abdul-haseeb/15min"

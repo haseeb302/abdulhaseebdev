@@ -2,10 +2,7 @@ import { HeroHighlightDemo } from "@/components/hero/Hero";
 import { NavbarDemo } from "@/components/navbar/Navbar";
 // import { ProjectCard } from "@/components/pin/Pin";
 import { AnimatedTooltipPreview } from "@/components/tooltip/Tooltip";
-import {
-  AboutMe,
-  TracingBeamDemo,
-} from "@/components/tracing-beam/TracingBeam";
+import { AboutMe } from "@/components/tracing-beam/TracingBeam";
 
 import { Projects } from "@/components/grid/bento";
 import Image from "next/image";
