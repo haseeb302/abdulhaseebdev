@@ -141,7 +141,7 @@ export default function Home() {
           >
             Services
           </h2>
-          <span className="text-sm font-bold text-white text-opacity-70">
+          <span className="text-sm text-center font-bold text-white text-opacity-70">
             Price starting from 1800$/month,{" "}
             <a
               href="https://cal.com/abdul-haseeb/15min"
