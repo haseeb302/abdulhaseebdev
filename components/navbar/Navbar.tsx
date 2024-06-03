@@ -18,16 +18,16 @@ function Navbar({ className }: { className?: string }) {
       <Menu setActive={setActive}>
         {/* <div> */}
         <MenuItem setActive={setActive} active={active} item="Projects" />
-        <MenuItem setActive={setActive} active={active} item="Experience" />
-        <MenuItem setActive={setActive} active={active} item="Education" />
+        <MenuItem setActive={setActive} active={active} item="Services" />
+        <MenuItem setActive={setActive} active={active} item="About" />
         {/* </div> */}
         <div className="!ml-auto lg:visible md:visible invisible">
           <a
-            href="/AbdulHaseeb_CV.pdf"
-            download="CV"
+            href="https://cal.com/abdul-haseeb/15min"
+            target="_blank"
             className="bg-gradient-to-r from-purple-500 to-violet-500 text-white lg:px-4 lg:py-2 md:px-4 md:py-2 rounded-full"
           >
-            Download CV
+            Book a Call
           </a>
         </div>
       </Menu>

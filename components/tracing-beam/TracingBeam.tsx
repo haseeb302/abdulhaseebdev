@@ -1,66 +1,49 @@
 "use client";
 import React from "react";
-import { Roboto } from "next/font/google";
 import Image from "next/image";
-import { twMerge } from "tailwind-merge";
-import { TracingBeam } from "@/components/tracing-beam/TracingBeamContainer";
 import CBLogo from "/public/cb-logo.svg";
 import LSLogo from "/public/ls-logo.png";
 import MDXLogo from "/public/mdx.webp";
 
-// If loading a variable font, you don't need to specify the font weight
-const roboto = Roboto({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-roboto",
-});
-
-export function TracingBeamDemo() {
+export function AboutMe() {
   return (
-    <TracingBeam className="px-6">
-      <div className="max-w-2xl mx-auto antialiased pt-4 relative">
-        {content.map((item, index) => (
-          <div key={`content-${index}`} className="mb-10" id={item?.id}>
-            <h2 className="text-2xl font-bold leading-tight mb-4 underline underline-offset-2 text-white">
-              {item?.id === "Education" ? "Education" : "Experience"}
-            </h2>
+    <div className="flex justify-center gap-4 mx-auto pt-4">
+      {content.map((item, index) => (
+        <div
+          key={`content-${index}`}
+          className="border p-5 rounded-xl"
+          id={item?.id}
+        >
+          <p className="text-lg md:text-xl lg:text-xl font-bold">
+            {item.title}
+          </p>
+          <h2 className="bg-transparent border-1 rounded-full text-xs w-fit px-2 py-1 mb-4">
+            ({item.badge})
+          </h2>
 
-            <p
-              className={twMerge(
-                roboto.className,
-                "text-xl mb-4 dark:text-white"
-              )}
-            >
-              {item.title}
-            </p>
-            <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4 font-bold">
-              {item.badge}
-            </h2>
-            <div className="text-sm  prose prose-sm dark:prose-invert dark:text-white">
-              {item?.image && (
-                <a href={item?.href} target="_blank">
-                  <Image
-                    src={item.image}
-                    alt="blog thumbnail"
-                    height="800"
-                    width="400"
-                    className="rounded-lg mb-10 object-cover bg-white p-4"
-                  />
-                </a>
-              )}
-              {item.description}
-            </div>
+          <div className="text-sm  prose prose-sm dark:prose-invert">
+            {item?.image && (
+              <a href={item?.href} target="_blank">
+                <Image
+                  src={item.image}
+                  alt="blog thumbnail"
+                  height="400"
+                  width="200"
+                  className="rounded-lg object-cover p-4"
+                />
+              </a>
+            )}
           </div>
-        ))}
-      </div>
-    </TracingBeam>
+        </div>
+      ))}
+    </div>
   );
 }
 
 const content = [
   {
     badge: "Sep, 2022 - Oct, 2023",
-    title: "MSc Data Science",
+    title: "MSc in Data Science",
     id: "Education",
     description: (
       <div>
@@ -147,7 +130,7 @@ const content = [
         </ul>
       </>
     ),
-    badge: "July, 2020 - January, 2022",
+    badge: "July, 2020 - Jan, 2022",
     image: LSLogo,
     href: "https://lastingsales.com/",
   },

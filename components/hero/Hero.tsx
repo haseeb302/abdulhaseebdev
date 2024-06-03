@@ -35,12 +35,19 @@ export function HeroHighlightDemo() {
           </strong>
           Full Stack Engineer.
         </p>
-        <a
+        {/* <a
           href="/AbdulHaseeb_CV.pdf"
           download="CV"
           className="bg-gradient-to-r from-purple-500 to-violet-500 text-white lg:invisible md:invisible px-2 py-1 text-xs visible rounded-md"
         >
           Download CV
+        </a> */}
+        <a
+          href="https://cal.com/abdul-haseeb/15min"
+          target="_blank"
+          className="bg-gradient-to-r from-purple-500 to-violet-500 text-white lg:invisible md:invisible px-2 py-1 text-xs visible rounded-md"
+        >
+          Book a Call
         </a>
       </div>
     </HeroHighlight>
