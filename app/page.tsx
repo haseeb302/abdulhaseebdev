@@ -131,48 +131,49 @@ export default function Home() {
         >
           Services
         </h2>
-        <div className="flex flex-col gap-10 mx-32">
-          <ul className="space-y-4">
-            <li>
-              <div className="space-y-3">
-                <div className="flex flex-wrap items-center gap-2">
-                  <h3 className="font-redhat text-xl md:text-2xl font-bold">
-                    Web Design &amp; Development
-                  </h3>
-                  <span className="rounded-full bg-green-500 px-1 py-0.5 text-xs font-bold text-background motion-safe:animate-pulse">
-                    Recommended
+        <ul className="flex flex-col gap-10 lg:mx-32 md:mx-24 mx-12">
+          {/* <ul className="space-y-4"> */}
+          <li>
+            <div className="space-y-3">
+              <div className="flex flex-wrap items-center gap-2">
+                <h3 className="font-redhat text-xl md:text-2xl font-bold">
+                  Web Design &amp; Development
+                </h3>
+                <span className="rounded-full bg-green-500 px-1 py-0.5 text-xs font-bold text-background motion-safe:animate-pulse">
+                  Recommended
+                </span>
+              </div>
+              <ul className="space-y-2">
+                <li className="flex gap-2">
+                  <IconArrowRight className="w-6 h-6 md:w-8 md:h-8 lg:w-8 lg:h-8" />
+                  <span className="font-medium lg:text-xl md:text-lg text-md">
+                    Custom website and web application design and development
+                    tailored to your needs.
                   </span>
-                </div>
-                <ul className="space-y-2">
-                  <li className="flex gap-2">
-                    <IconArrowRight className="w-6 h-6 md:w-8 md:h-8 lg:w-8 lg:h-8" />
-                    <span className="font-medium lg:text-xl md:text-lg text-md">
-                      Custom website and web application design and development
-                      tailored to your needs.
-                    </span>
-                  </li>
-                </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <div className="space-y-3">
+              <div className="flex flex-wrap items-center gap-2">
+                <h3 className="font-redhat text-xl md:text-2xl font-bold">
+                  SaaS with OpenAI API
+                </h3>
               </div>
-            </li>
-            <li>
-              <div className="space-y-3">
-                <div className="flex flex-wrap items-center gap-2">
-                  <h3 className="font-redhat text-xl md:text-2xl font-bold">
-                    SaaS with OpenAI API
-                  </h3>
-                </div>
-                <ul className="space-y-2">
-                  <li className="flex gap-2">
-                    <IconArrowRight className="w-6 h-6 md:w-8 md:h-8 lg:w-8 lg:h-8" />
-                    <span className="font-medium lg:text-xl md:text-lg text-md">
-                      Build an AI SaaS application and start earning
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
+              <ul className="space-y-2">
+                <li className="flex gap-2">
+                  <IconArrowRight className="w-6 h-6 md:w-8 md:h-8 lg:w-8 lg:h-8" />
+                  <span className="font-medium lg:text-xl md:text-lg text-md">
+                    Build an AI SaaS application and start earning
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        {/* </div> */}
       </section>
       <div className="bg-white text-black py-10" id="About">
         <div className="flex flex-col items-center">

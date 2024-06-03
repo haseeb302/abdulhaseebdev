@@ -7,7 +7,7 @@ import MDXLogo from "/public/mdx.webp";
 
 export function AboutMe() {
   return (
-    <div className="flex justify-center gap-4 mx-auto pt-4">
+    <div className="flex flex-wrap justify-center gap-4 mx-auto pt-4">
       {content.map((item, index) => (
         <div
           key={`content-${index}`}
